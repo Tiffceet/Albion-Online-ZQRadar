@@ -80,10 +80,10 @@ class MobsHandler
 
     NewMobEvent(parameters)
     {
-        console.log(parameters)
-
+        // console.log(parameters)
         const id = parseInt(parameters[0]); // entity id
         let typeId = parseInt(parameters[1]); // real type id
+        console.log(`NEW MOB: typeid=${typeId};identifiedtype=${this.mobinfo[typeId]}`)
 
         const loc = parameters[7];
         let posX = loc[0];
